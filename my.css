@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li,a,button{
+    font-family: "montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #0088a9;
+}
+
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive .menu{
+      float: left;
+      width: 100%;
+      display: block;
+      text-align: left;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+section{
+    height: 400px;
+    padding: 0px;
+    
+    box-sizing: border-box;
+    
+  }
+
+  section h1{
+    text-align: center;
+    color: whitesmoke;
+    text-size-adjust:100px;
+    text-decoration:darksalmon;
+  }
+
+ 
+  
+  #home img{
+    width: 400px;
+    animation:animate 2s linear infinite;
+    padding-top: 20px;
+    padding-right: 50px;
+  }
+  @keyframes animate {
+    0% {
+      filter: hue-rotate(0deg)
+      
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  #abc img{
+    height: 100px;
+    margin-top: 50px;
+
+  }
+
+  #about{
+    background-color: rgb(193, 129, 129);
+  }
+  #about img{
+    width: 400px;
+  }
+  
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+  }
+  
